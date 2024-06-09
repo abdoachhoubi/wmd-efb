@@ -3,44 +3,44 @@ const users = [
     name: "Adil Bel Mqadem",
     login: "abel-mqa",
     projects: [
-      "/abel-mqa/abel-mqa/challenge-one/",
-      "/abel-mqa/abel-mqa/challenge-two/",
-      "/abel-mqa/abel-mqa/challenge-three/",
+      "projects/abel-mqa/abel-mqa/challenge-one/",
+      "projects/abel-mqa/abel-mqa/challenge-two/",
+      "projects/abel-mqa/abel-mqa/challenge-three/",
     ],
   },
   {
-	name: "El Mokhtar Ouhrich",
-	login: "eouhrich",
-	projects: [
-	  "/eouhrich/eouhrich/challenge 1/",
-	  "/eouhrich/eouhrich/challenge 2/",
-	  "/eouhrich/eouhrich/challenge 3/",
-	],
+    name: "El Mokhtar Ouhrich",
+    login: "eouhrich",
+    projects: [
+      "projects/eouhrich/eouhrich/challenge 1/",
+      "projects/eouhrich/eouhrich/challenge 2/",
+      "projects/eouhrich/eouhrich/challenge 3/",
+    ],
   },
   {
     name: "Anas Chahid Ksabi",
     login: "achahid-",
-    projects: ["/achahid/achahid-/"],
+    projects: ["projects/achahid/achahid-/"],
   },
   {
     name: "Ayoub Echchariy",
     login: "ayechcha",
-    projects: ["/ayechcha/ayechcha/"],
+    projects: ["projects/ayechcha/ayechcha/"],
   },
   {
     name: "Lahoucine Aoubaidi",
     login: "laoubaid",
-    projects: ["/laoubaid/laoubaid/"],
+    projects: ["projects/laoubaid/laoubaid/"],
   },
   {
     name: "Mohamed Kartit",
     login: "mkartit",
-    projects: ["/mkartit/mkartit/"],
+    projects: ["projects/mkartit/mkartit/"],
   },
   {
     name: "Smail Aderdour",
     login: "saderdou",
-    projects: ["/saderdou/saderdou/"],
+    projects: ["projects/saderdou/saderdou/"],
   },
 ];
 
@@ -48,7 +48,7 @@ const Card = ({ login, name, projects }) => `
 <article class="profile">
       <div class="profile-info">
 	  <div class="profile-image">
-        <img src="assets/${login}.jpeg" />
+        <img src="src/assets/${login}.jpeg" />
       </div>
       <h2 class="profile-username">${name}</h2>
       <a class="profile-user-handle" href="https://profile.intra.42.fr/users/${login}" target="_blank">@${login}</a>
