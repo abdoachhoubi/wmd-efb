@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+a {
+	color: inherit;
+}
+/* End basic CSS override */
+
+.profile {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	max-width: 300px;
+	background-color: #1b2028;
+	border-radius: 16px;
+	position: relative;
+	border: 3px solid transparent;
+	background-clip: padding-box;
+	text-align: center;
+	color: #f1f3f3;
+	background-image: linear-gradient(
+		135deg,
+		rgba(#2e523c, 0.35) 0%,
+		rgba(#1c2e23, 0.1) 15%,
+		#101010 20%,
+		#1b2028 100%
+	);
+	&:after {
+		content: "";
+		display: block;
+		top: -3px;
+		left: -3px;
+		bottom: -3px;
+		right: -3px;
+		z-index: -1;
+		position: absolute;
+		border-radius: 16px;
+		background-image: linear-gradient(
+			135deg,
+			#4dffa3,
+			#2acdff 20%,
+			#1b2028 30%,
+			#2c333e 100%
+		);
+	}
+}
+.profile-info {
+	width: 100%;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.profile-image {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 175px;
+	height: 175px;
+	position: relative;
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+	}
+}
+
+.profile-username {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.profile-user-handle {
+	color: #7d8396;
+}
+
+.profile-actions {
+	padding: 1.5rem 0;
+	display: flex;
+	gap: 2rem;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn {
+	border: 0;
+	width: 100%;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.15s ease;
+
+	&--primary {
+		border-radius: 99em;
+		background-color: #3772ff;
+		background-image: linear-gradient(135deg, #5587ff, #3772ff);
+		color: #fff;
+		padding: 1rem 1em;
+		text-decoration: none;
+		line-height: 110%;
+		&:hover,
+		&:focus {
+			background-size: 150%;
+		}
+	}
+
+	&--icon {
+		height: 46px;
+		width: 46px;
+		border-radius: 50%;
+		border: 3px solid #343945;
+		color: #7d8396;
+		i {
+			font-size: 1.25em;
+		}
+
+		&:hover,
+		&:focus {
+			border-color: #7d8396;
+		}
+	}
+}
+
+.profile-links {
+}
+
+.link {
+	text-decoration: none;
+	color: #7d8396;
+	i {
+		font-size: 1.25em;
+	}
+}

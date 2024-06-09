@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body {
+	background-color: #002706;
+	font-family: "Karla", sans-serif;
+}
+.wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url(../images/neo.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #ffffffcf;
+	border-radius: 15px;
+	padding: 20px 30px;
+    width: 500px;
+	height: 700px;
+}
+.wrapper h1 {
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	background-color: #ffffffa7;
+	border-radius: 15px;
+	padding: 10px 15px;
+}
+.wrapper p {
+	color: #002706;
+	font-weight: bold;
+	line-height: 2.3;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	background-color: #ffffffa7;
+	border-radius: 15px;
+	padding: 50px;
+}
+@media (max-width: 767px) {
+	.wrapper {
+		width: 95%;
+		margin: 0 auto;
+	}
+	.wrapper p {
+		line-height: 1;
+	}
+}

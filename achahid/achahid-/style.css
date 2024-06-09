@@ -1,0 +1,233 @@
+/* Default Styling */
+
+@keyframes anim {
+    50% {
+        border-right: 1px solid white
+    }
+    100%{
+        border-right: 0px;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    font-size: 1rem;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(./images/mariola-grobelska-h6XihPOkSIY-unsplash.jpg);
+    background-size: contain;
+    background-position:top;
+    background-repeat: round;
+}
+
+/* nav styling */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 4rem;
+}
+
+nav span {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+nav button {
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px #05f1d2 solid;
+    border-radius: 15px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+nav button:hover {
+    font-size: larger;
+    background-color: #03ba9285;
+    cursor: pointer;
+}
+
+.nav-menu li {
+    transition: 0.6s;
+    font-weight: bold;
+}
+
+.nav-menu li:hover {
+    font-size: larger;
+    border-bottom: 2px solid #05f1d2;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger-button {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hamburger i {
+    font-size: 2rem;
+}
+
+/* */
+
+main {
+    margin-top: 140px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 120px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#paragraph {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.8rem;
+    backdrop-filter: blur(10px);
+    mix-blend-mode: normal;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+#paragraph p {
+    text-wrap: wrap;
+}
+
+/* Card styling */
+
+#second-challenge-done {
+    width: 90%;
+    margin: 60px auto 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    height: 550px;
+    width: 700px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    mix-blend-mode: normal;
+    border-radius: 30px;
+}
+
+.img-container {
+    width: 50%;
+    height: 100%;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.matrix-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+.matrix-code p {
+    color: #90a88c;
+    text-shadow: 10px 10px 20px #90a88c;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+
+#text-input {
+    background-color: transparent;
+    border: 1px solid;
+    color: #90a88c;
+    text-shadow: 10px 10px 20px #90a88c;
+    font-weight: bold;
+    padding: 20px;
+    font-size: large;
+    border-radius: 15px;
+}
+
+#submit-button {
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px #05f1d2 solid;
+    border-radius: 15px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    font-size: larger;
+    background-color: #03ba9285;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        gap: 2rem; 
+    }
+
+    @media (max-width: 800px) {
+        .nav-menu {
+            display: none;
+        }
+        .hamburger {
+            display: block;
+        }
+    }
+
+
+}

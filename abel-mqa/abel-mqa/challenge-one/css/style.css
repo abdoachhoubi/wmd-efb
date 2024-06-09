@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: unset;
+}
+.container {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+body {
+	color: #fff;
+	font-family: "Karla", sans-serif;
+}
+.landing-page {
+	height: 100vh;
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000;
+}
+header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.056);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	-moz-backdrop-filter: blur(3px);
+}
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo img {
+	width: 90px;
+	height: 60px;
+}
+header ul {
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 50%;
+}
+header ul li {
+	transition-duration: .3s;
+	font-weight: bold;
+	font-size: 20px;
+}
+header ul li:hover {
+	color: #3dac17;
+}
+.hero {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	animation-name: drop-down;
+	animation-duration: 2s;
+	animation-delay: .3s;
+}
+.hero h1 {
+	margin-bottom: 60px;
+	font-size: 55px;
+}
+.hero p {
+	font-size: 22px;
+	padding: 30px 60px;
+	line-height: 2.3;
+	letter-spacing: 2px;
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.056);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	-moz-backdrop-filter: blur(5px);
+}
+@media (max-width: 767px) {
+	header ul {
+		flex-basis: 70%;
+	}
+	.hero {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.hero h1 {
+		font-size: 20px;
+	}
+	.hero p {
+		font-size: 13px;
+	}
+}
+@keyframes drop-down {
+	from {
+		top: -50%;
+	}
+	to {
+		top: 50%;
+	}
+}

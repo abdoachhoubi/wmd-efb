@@ -1,0 +1,53 @@
+#card {
+	width: 600px;
+	height: 700px;
+	padding: 50px;
+	text-align: center;
+	margin: auto;
+	background-color: rgb(0, 70, 9);
+	border-radius: 30px;
+	box-shadow: 10px 10px  1000px black inset;
+	padding: 100px;
+}
+
+#card input {
+	width: 500px;
+	height: 50px;
+	margin-bottom:70px;
+}
+
+#card label {
+	color: white;
+	font: 3em sans-serif;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+#submit {
+	background-color: green;
+	border: none;
+	color: white;
+	width: 200px;
+	height: 150px;
+	transition: 0.5s;
+
+}
+
+#card textarea {
+	width: 600px;
+	height: 150px;
+	margin-bottom:70px;
+
+}
+
+#submit:hover
+{
+	color: black;
+	background-color: white;
+	border-radius: 30px;
+	transition: 1s;
+}
+body {
+	background-color: rgb(0, 0, 0);
+	background-image: url("https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif");
+	background-size: 800px;
+}

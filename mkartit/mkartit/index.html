@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<title>The Matrics World</title>
+</head>
+
+<body>
+	<video autoplay muted loop id="myVideo">
+		<source src="./src/video.mp4" type="video/mp4">
+	</video>
+	<nav class="nav-bar">
+		<!-- <img src="src/logo.gif" alt="The Matrics World"> -->
+		<h1>The Matrics has you...</h1>
+		<div class="nav-menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="nav-res">
+			<i class="fa-solid fa-bars burger"></i>
+			<ul class="links-btn">
+				<i id="triangle" class="fa-solid fa-caret-up"></i>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<button type="submit" class="btn">Login</button>
+	</nav>
+	<!-- <hr> -->
+	<section class="description">
+		<h1 class="hero-title">Welcome to The Matrix</h1>
+		<p class="lines">
+			Bingo. It is a pickle. No doubt about it. The bad news is there's no way if you can really know whether I'm
+			here to help you or not, so it's really up to you. You just have to make up you on damned mind to either
+			accept what I'm going to tell you, or reject it.”
+			<span class="author">- The Oracle</span>
+		</p>
+	</section>
+	<section class="character">
+		<div class="card-neo">
+			<img src="./src/neo.jpg" alt="Neo">
+			<h2>Neo</h2>
+			<p>Neo is the protagonist of The Matrix franchise. A computer hacker who learns from mysterious rebels about
+				the true nature of his reality and his role in the war against its controllers.
+			</p>
+		</div>
+		<div class="card-morpheus">
+			<img src="./src/morpheus.jpg" alt="Morpheus">
+			<h2>Morpheus</h2>
+			<p>Morpheus is a computer programmer and a leader of the rebel forces. He is a mentor to Neo, offering him
+				guidance and wisdom as he learns about the Matrix and his role in the war against the machines.
+			</p>
+		</div>
+		<div class="card-trinity">
+			<img src="./src/trinity.jpg" alt="Trinity">
+			<h2>Trinity</h2>
+			<p>Trinity is a skilled hacker and fighter who is a member of the rebel forces. She is a close ally and
+				romantic interest of Neo, and plays a key role in the fight against the machines.
+			</p>
+	</section>
+	<section class="form">
+		<form>
+			<h2>Subscribe to our newsletter</h2>
+			<input type="text" placeholder="Enter your name">
+			<input type="email" placeholder="Enter your email">
+			<input id="message" type="text" placeholder="Message">
+			<button type="submit" class="btn">Subscribe</button>
+		</form>
+	</section>
+	<script src="main.js"></script>
+</body>
+
+</html>
